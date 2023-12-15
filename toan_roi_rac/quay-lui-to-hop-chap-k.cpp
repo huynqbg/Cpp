@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-// quay lui: sinh xau nhi phan
+// quay lui: to hop chap k cua n
 int n, x[100], k;
 
 void in() {

@@ -24,7 +24,7 @@ void pp_sinh() {
 
 bool check() {
 	int cnt =0;
-	for(int i=0; i<n; i++) {
+	for(int i=1; i<=n; i++) {
 		cnt+=a[i]; // dem cac bit 1 cua tung cau hinh 
 	}
 	return cnt == k;

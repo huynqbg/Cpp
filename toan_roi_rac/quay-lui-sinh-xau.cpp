@@ -14,7 +14,7 @@ void kq() {
 // ham check so luong k bit 1 thi moi in
 bool check() {
 	int cnt=0;
-	for(int i=0; i<n; i++) {
+	for(int i=1; i<=n; i++) {
 		cnt+=x[i];
 	}
 	return cnt == k;

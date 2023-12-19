@@ -9,7 +9,7 @@ void khoi_tao() {
 	for (int i=1; i<=n; i++) a[i] = 0;
 }
 
-// phuong phap sinh cac cau hinh tiep theo 
+// phuong phap sinh cac cau hinh tiep theo
 void pp_sinh() {
 	int k=n;
 	// bat dau tu index cuoi cung cua so. tim vi tri co gia tri bang 0 thi dung
@@ -25,7 +25,7 @@ void pp_sinh() {
 bool check() {
 	int cnt =0;
 	for(int i=1; i<=n; i++) {
-		cnt+=a[i]; // dem cac bit 1 cua tung cau hinh 
+		cnt+=a[i]; // dem cac bit 1 cua tung cau hinh
 	}
 	return cnt == k;
 }
@@ -37,7 +37,7 @@ int main() {
 	khoi_tao();
 	while (ok==1) {
 		// in ra cac cau hinh
-		if (check()) { // thoa man so luong k bit 1 
+		if (check()) { // thoa man so luong k bit 1
 			for (int i=1; i<=n; i++) cout << a[i];
 			cout << endl;
 		}

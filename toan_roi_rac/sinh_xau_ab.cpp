@@ -23,12 +23,16 @@ void pp_sinh() {
 }
 
 bool check() {
-	int cnt =0;
-	for(int i=1; i<=n; i++) {
-		if (a[i] == 'B')
-			++cnt; // dem cac bit 'B' cua tung cau hinh 
+	int cnt = 0, max = -1;
+	for(int i=1; i<n; i++) {
+		if(a[i] == 'B' && a[i] == a[i+1]) {
+			++cnt;
+		} else {
+			if (cnt > max) max = cnt;
+			cnt = 0;
+		}
 	}
-	return cnt == k;
+	return max == k;
 }
 
 int main() {
@@ -38,7 +42,7 @@ int main() {
 	khoi_tao();
 	while (ok==1) {
 		// in ra cac cau hinh
-		if (check()) { // thoa man so luong k bit 'b'
+		if(check()) { // thoa man so luong k bit 'b'
 			for (int i=1; i<=n; i++) cout << a[i];
 			cout << endl;
 		}
